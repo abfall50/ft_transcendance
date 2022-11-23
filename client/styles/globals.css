@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "pixel.css";
+@import "border.css";
+@import "background.css";
+
+@import "pixel.css";
+@import "border.css";
+@import "background.css";
+@import "text.css";
+@import "chat.css";
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@layer base {
+  body {
+    @apply text-zinc-800 bg-zinc-100;
+    @apply dark:text-zinc-100 dark:bg-zinc-900;
+  }
+
+  button, a {
+    @apply outline-none;
+  }
+}

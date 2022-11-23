@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  .border-default {
+    @apply border-zinc-100;
+    @apply dark:border-zinc-800;
+  }
+  
+  .border-opposite {
+    @apply border-zinc-800;
+    @apply dark:border-zinc-200;
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "trans",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently --kill-others-on-fail 'cd client && npm run dev' 'cd server && npm run start:dev'",
+    "build": "concurrently --kill-others-on-fail 'cd client && npm run build' 'cd server && npm run build'",
+    "start": "concurrently --kill-others-on-fail 'cd client && npm run start' 'cd server && npm run start'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/ws": "^8.5.3",
+    "aos": "^2.3.4",
+    "concurrently": "^7.1.0",
+    "tailwindcss-animation-delay": "^1.0.7"
+  }
+}
